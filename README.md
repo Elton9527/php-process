@@ -4,16 +4,17 @@ PHP进程使用案例
 案例说明：假设有120个任务需要执行（例如输出'Hello process'）,没输出一次需要休息1s,单进程执行的话可能需要2分钟，开启两个进程执行那么将会提高一倍的速度。
 
 ### 必要条件 ###
-1.仅能在Linux下运行
-2.确认开启了pcntl扩展， php -m | grep pcntl
+1.仅能在Linux下运行<br/>
+2.确认开启了pcntl扩展， php -m | grep pcntl  <br/>
 
 ### 文件说明 ###
-process.php  处理逻辑
-job.php  执行输出动作
+process.php  处理逻辑 <br/>
+job.php  执行输出动作 <br/>
 
 
 ### 执行 ###
-[root@www demo]# php process.php 
+[root@www demo]# php process.php <br/>
+pcntl_exec('/opt/remi/php72/root/bin/php', $cmds[$i]); => 将PHP路径替换为自己的路径<br/>
 
 ```
 运行结果：
@@ -141,3 +142,6 @@ No.59,Hello,Process
 子进程结束时间：09:32:49
 子进程结束时间：09:32:50
 ```
+
+### 参考文件 ###
+https://segmentfault.com/a/1190000014735390?utm_source=tag-newest
