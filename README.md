@@ -145,3 +145,6 @@ No.59,Hello,Process
 
 ### 参考文件（转自） ###
 https://segmentfault.com/a/1190000014735390?utm_source=tag-newest
+
+进程之间是不能共享内存的，那么，进程间的通信怎么处理，请参考：
+https://blog.csdn.net/kingandwede136/article/details/85047116
